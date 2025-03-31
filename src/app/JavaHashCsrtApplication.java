@@ -11,15 +11,7 @@ public class JavaHashCsrtApplication {
 		String csrt = JavaHashGeneratorItem.CSRT_VALUE_DEFAULT;
 		String keyAccess = JavaHashGeneratorItem.KEY_ACCESS_DEFAULT;
 
-		JavaHashGeneratorItem parameters = JavaHashCsrtGenerator.createJavaHashGeneratorItem(idCsrt, csrt, keyAccess);
-		System.out.println("Generating Hash CSRT...");
+		JavaHashCsrtGenerator.createJavaHashGeneratorItem(idCsrt, csrt, keyAccess);
 
-		if (parameters != null) {
-
-			System.out.println("Hash CSRT generated success!");
-			System.out.println("Result " + parameters.getHashCsrt());
-		} else
-			System.out.println("Fail to trying generate Hash CSRT.");
 	}
-
 }
